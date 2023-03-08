@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,900;1,100;1,200;1,400;1,500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#E14D2A ;
+}
+
+#seleccionar-mascotas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color:white;
+    font-size: 40px
+}
+
+.subtitulo{
+    color: white;
+    
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 200px;
+    height: 100px;
+    background: #FD841F;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 700px;
+}
+
+.tarjeta-de-mokepon img{
+    width: 70px;
+}
+
+#boton-mascota{
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: x-large;
+    background: #3E6D9C;
+}
+
+input{
+   display: none;
+}
+
+input:checked + label {
+width: 100px;
+background-color: blue;
+}
+
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background-color:coral;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#mensajes {
+    width: 280px;
+    background: #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #boton-reiniciar{
+      border: none;
+      color: violet;
+      font-family: cursive;
+  }
+
+  .ataques{
+      display: grid;
+      grid-template-columns: 100px 100px;
+  }
+
+  .ataques-jugador, ataques-enemigo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  @media (max-width: 360px) {
+    .tarjetas,  .tarjetas-ataques{
+        flex-direction: column;
+    }
+  }
